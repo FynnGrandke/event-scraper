@@ -5,9 +5,10 @@ from bs4 import BeautifulSoup
 
 
 # FIXME: @FynnGrandke URL needs to be adjustable
-def meetup():
+# TODO: Replace module name
+def getPLACEHOLDEREvent():
     # TODO: Insert URL where to fetch from
-    url = ''
+    url = 'PLACEHOLDER'
 
     response = requests.get(url)
 
@@ -15,4 +16,4 @@ def meetup():
 
     # TODO: Name, date, time of event
     for tag in soup.findAll('span', {'itemprop': 'name'}):
-        print('Meetup' + tag.string)
+        print('PLACEHOLDER: ' + tag.string)
