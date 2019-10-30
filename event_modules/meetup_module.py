@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 
 
-def meetup():
+def getMeetupEvents():
     # FIXME: @FynnGrandke URL needs to be adjustable
     url = 'https://www.meetup.com/find/events/?allMeetups=true&radius=25&userFreeform=Tokyo%2C+Japan&mcId=c1023444&mcName=Tokyo%2C+JP&month=10&day=19&year=2019'
 
