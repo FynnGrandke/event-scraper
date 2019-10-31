@@ -15,5 +15,5 @@ def getPLACEHOLDEREvent():
     soup = BeautifulSoup(response.text, "html.parser")
 
     # TODO: Name, date, time of event
-    for tag in soup.findAll('span', {'itemprop': 'name'}):
+    for tag in soup.findAll('HTMLELEMENT', {'PROPERTY': 'NAME'}):
         print('PLACEHOLDER: ' + tag.string)
