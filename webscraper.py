@@ -6,12 +6,10 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("event scraper")
-    parser.add_argument(
-        "website", help="The website from which to get events.", type=str)
+    parser.add_argument("website", help="The website from which to get events.", type=str)
     args = parser.parse_args()
 
-    # getAlleventsinEvents()
-
+    # Check for the event
     if args.website == 'meetup':
         getMeetupEvents()
     else:
@@ -21,5 +19,6 @@ if __name__ == "__main__":
             if args.website == 'alleventsin':
                 getAlleventsinEvents()
             else:
+                # If argument equals no event
                 print('NO EVENTS FOR', args.website)
     print('END for', args.website)
