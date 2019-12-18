@@ -33,4 +33,5 @@ TBA
 
 ## Information
 
+* Make sure to run python3 on a MacOS
 * Problem? Contact me!
